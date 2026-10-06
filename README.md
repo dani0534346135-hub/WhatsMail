@@ -15,3 +15,6 @@ npm start
 npm run dist
 
 GitHub Actions automatically builds a Windows installer on every push to main and publishes it as a workflow artifact.
+
+
+Build pipeline initialized.
