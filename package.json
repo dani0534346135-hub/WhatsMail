@@ -1,0 +1,7 @@
+{
+  "name":"whatsmail","version":"1.0.0","description":"WhatsMail desktop companion","main":"src/main.js","license":"MIT",
+  "scripts":{"start":"electron .","dist":"electron-builder --win nsis"},
+  "dependencies":{"@whiskeysockets/baileys":"^6.7.18","nodemailer":"^7.0.6","qrcode":"^1.5.4"},
+  "devDependencies":{"electron":"^38.2.0","electron-builder":"^26.0.12"},
+  "build":{"appId":"com.whatsmail.desktop","productName":"WhatsMail","files":["src/**/*","package.json"],"win":{"target":"nsis","artifactName":"WhatsMail-Setup-\${version}.\${ext}"},"nsis":{"oneClick":false,"perMachine":false,"allowToChangeInstallationDirectory":true}}
+}
